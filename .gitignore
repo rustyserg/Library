@@ -261,5 +261,5 @@ __pycache__/
 *.pyc
 
 
-Library/Library.vcxproj
-Library/Library.vcxproj.filters
+Library.vcxproj
+Library.vcxproj.filters
