@@ -10,6 +10,7 @@ void Application::Run()
 {
 	Menu menu;
 	Book book;
+	Rack rack;
 
 	unsigned short int choise;
 
@@ -22,17 +23,18 @@ void Application::Run()
 		{
 			case 1:
 			{
-				book.ViewBook();
+				rack.ViewAllBooks();
 				break;
 			}
 			case 2:
 			{
-				book.AddBook();
+				book.NewBook();
+				rack.AddBook(book);
 				break;
 			}
 			case 3:
 			{
-				book.DeleteBook();
+				rack.DeleteBook(book);
 				break;
 			}
 			case 4:
@@ -44,6 +46,20 @@ void Application::Run()
 	}
 }
 
+bool Application::Exit()
+{
+	char yes_no;
+	std::cout << "Do you really want exit? Y or N" << std::endl;
+	std::cin >> yes_no;
+
+	switch (yes_no)
+	{
+	case 'y': case 'Y':
+		exit(0);
+	case 'n': case 'N':
+		return false;
+	}
+}
 
 Application::~Application()
 {

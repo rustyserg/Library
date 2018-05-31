@@ -18,12 +18,6 @@ void Book::NewBook()
 	std::cin >> year;
 }
 
-void Book::ToDelete()
-{
-	std::cout << "Enter id of the book wich you want to delete" << std::endl;
-	std::cin >> book_id;
-}
-
 Book::~Book()
 {
 }

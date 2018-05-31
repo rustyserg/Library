@@ -7,7 +7,6 @@ class Book
 public:
 	Book();
 	void NewBook();
-	void ToDelete();
 	~Book();
 public:
 	unsigned int book_id;
