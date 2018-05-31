@@ -6,7 +6,10 @@ class Menu
 public:
 	Menu();
 	void Introduction();
-	bool Exit();
+	//void ViewAllBooks();
+	//void AddBook(const Book &book);
+	//void DeleteBook(Book &book);
+	void Exit();
 	~Menu();
 };
 
